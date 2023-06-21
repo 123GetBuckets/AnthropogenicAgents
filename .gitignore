@@ -1,0 +1,7 @@
+./model/WizardLM-7B-uncensored.ggmlv3.q5_K_S.bin
+./model/Wizard-Vicuna-13B-Uncensored.ggmlv3.q2_K.bin
+./sessions/
+./Chat.py
+./low_level_api_chat_cpp.py
+./low_level_api_llama_cpp.py
+
