@@ -4,7 +4,7 @@ import random
 from uuid import UUID, uuid4
 from typing import Literal, Optional, Type, cast
 from pydantic import BaseModel
-
+from objectives import Objective
 
 class Char(BaseModel):
     id: UUID
@@ -16,8 +16,10 @@ class Char(BaseModel):
         self,
         full_name: str,
         bio: str,
-        id: Optional[str | UUID] = None,
+        id: Optional[UUID] = None,
         ):
         if id is None:
             id = uuid4()
 
+    def plan(self): #-> list[Objective]:
+        return
